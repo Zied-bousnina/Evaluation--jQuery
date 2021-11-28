@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>jQuery Evalution</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+    body{
+      padding-top: 50px;
+    }
+    .err{
+     display: none; 
+   }
+   #obli{
+     color: red;
+   }
+   input{
+    margin-top: 10px;
+   }
+  
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Zied bousnina DSI21</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+        <!--
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        -->
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <form action="" style="padding-top: 20px;" id="form" method="post" >
+        <fieldset>
+          <legend>Vos coordonnés</legend>
+          <label >Prénom :<span id="obli">*</span></label>
+          <input type="text" name="prenom" id=""><br>
+          <label >Nom :<span id="obli">*</span></label>
+          <input type="text" name="nom" id="" width="10" style="margin-left: 20px;"><br>
+          <label >E-mail :<span id="obli">*</span></label>
+          <input type="email" name="Email" id=""style="margin-left: 10px;"><br>
+          <label style="margin: 20px 0 10px 0; ">Pays :<span id="obli">*</span></label>
+          <select name="Pays" id="pays"  style="margin: 0 0 20px 20px;" class=" input-sm">
+            <option value="">choisir votre pays</option>
+            <option value="FR">France</option>
+            <option value="TN">Tunisie</option>
+            <option value="TR">Turkey</option>
+          </select>
+          <br>
+          <label for=""style="margin-bottom: 20px;">Genre : <span id="obli">*</span> </label>
+          <span id="eeee"><input type="radio" name="R1" id=""class="form-check-input" style="margin-left:10px">Homme <input type="radio" name="R1" id=""class="form-check-input">Femme
+          </span>
+        </fieldset>
+        <fieldset>
+          <legend >Vos compétences<span id="obli">*</span></legend>
+          <span id="check">
+          <input type="checkbox" name="r1" id=""class="form-check-input">HTML
+          <input type="checkbox" name="r1" id=""class="form-check-input">CSS
+          <input type="checkbox" name="r1" id=""class="form-check-input">PHP
+          <input type="checkbox" name="r1" id=""class="form-check-input">MySQL
+          <input type="checkbox" name="r1" id=""class="form-check-input">JavaScript
+          </span>
+          <br>
+          <label >Commentaires <span id="obli">*</span></label>
+          <textarea name="commentaire" id="" cols="30" rows="4"></textarea>
+        </fieldset>
+        <hr>
+        <span id="obli">* Champs obligatoires</span><br>
+        <input type="submit" value="ENVOYER">
+       </form>
+
+      
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
